@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="/tmp/leetcode/editor/cn/[325]和等于 k 的最长子数组长度.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="/tmp/leetcode/editor/cn/doc/content/[325]和等于 k 的最长子数组长度.md" />
+              <option name="frontendQuestionId" value="leetcode.cn325" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="/tmp/leetcode/editor/cn/[325]和等于 k 的最长子数组长度.py" />
+              <option name="titleSlug" value="maximum-size-subarray-sum-equals-k" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
