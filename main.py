@@ -55,30 +55,89 @@
 #     if not root:
 #         return 0
 #     return abs((depth(root.left) + 1) - (depth(root.right) + 1)) < 2
-from collections import Counter
+import math
+from collections import Counter, defaultdict
+
 # l = [2,3,4,5]
 # root = Node(1)
 # for i in l:
 #     add(root, i)
+# s = "abcd"
+# t = "abcde"
+# s = int(input())
+# n = 0
+# if s < 10:
+#     print(s)
+#     exit()
+# for i in range(10, s + 1):
+#     n += 2
+# print(n + 9)
 
-from string import ascii_lowercase, ascii_uppercase, digits
-# s = "A man, a plan, a canal: Panama"
-# s1 = [i for i in s if i in ascii_lowercase or i in ascii_uppercase or i in digits]
-# print(''.join(i for i in s1[::-1]).lower() == ''.join(i for i in s1).lower())
-
-# a = [-4, -1, 0, 3, 10]
-# l = len(a) - 1
+# if s < 10:
+#     print(s)
+#     exit()
+# def findDigits(n):
+#     if n == 1:
+#         return 1
+#     s = str(n)
+#     return len(s) + findDigits(n - 1)
 #
-# while l > 0:
-#     if abs(a[0]) > abs(a[l]):
-#         a[0], a[l] = a[l], a[0]
-#     else:
-#         pass
+# # Driver Code
+#
+# # Given N
+# N = 13
+#
+# # Function call
+# print(findDigits(N))
 
-nums = [4,5,6,7,0,1,2]
-k = 3
-d = {}
-try:
-    print(nums.index(k))
-except ValueError as e:
-    print(-1)
+# 3
+# 010011
+# 0
+# 1111000
+
+n = int(input())
+a = []
+for _ in range(n):
+    a.append(input())
+
+
+for i in a:
+    s = i.strip('0')
+    print(s.count('0'), sep='\n')
+
+
+
+# n = 13
+# print(n * (n + 1) // 2)
+# s = int(input())
+# n = 0
+# if s < 10:
+#     print(s)
+#     exit()
+# print(s * len(str(s)) - 9)
+
+# print(pow(10, 9))
+
+# 9
+# 90
+# 900
+# 9000
+# 90000
+# 900000
+# 9000000
+# 90000000
+
+# def fun(n):
+#     if n == 1:
+#         return 1
+#     s = str(n)
+#     return len(s) + fun(n - 1)
+# print(fun(1000))
+
+# def totalDigits(n):
+#     if n < 10:
+#         return n
+#     number_of_digits = 0
+#     for i in range(1, n, 10):
+#         number_of_digits = (number_of_digits + (n - i + 1))
+#     return number_of_digits + 1
